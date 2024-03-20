@@ -29,8 +29,11 @@ public class GatewayConfig {
                         .filters(f -> f.filter(filter))
                         .uri("lb://notification-service"))
 
-                .route("auth-service", r -> r.path("/v1/auth/**")
-                        .uri("lb://auth-service"))
+//                .route("auth-service", r -> r.path("/v1/auth/**")
+//                        .uri("lb://auth-service"))
+
+                .route("auth-register", r -> r.path("/v1/auth/register")
+                        .uri("http://localhost:5050/v1/auth/register"))
 
                 .route("file-storage", r -> r.path("/v1/file-storage/**")
                         .filters(f -> f.filter(filter))

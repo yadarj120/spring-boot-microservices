@@ -4,7 +4,7 @@ import com.safalifter.userservice.enums.Active;
 import com.safalifter.userservice.enums.Role;
 import lombok.*;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity(name = "users")
 @Builder

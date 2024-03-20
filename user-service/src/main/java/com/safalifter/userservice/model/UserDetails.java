@@ -3,7 +3,7 @@ package com.safalifter.userservice.model;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
 
-import javax.persistence.Embeddable;
+import jakarta.persistence.*;
 
 @Embeddable
 @Builder

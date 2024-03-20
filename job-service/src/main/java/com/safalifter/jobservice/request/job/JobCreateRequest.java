@@ -2,8 +2,7 @@ package com.safalifter.jobservice.request.job;
 
 import lombok.Data;
 
-import javax.validation.constraints.NotBlank;
-
+import jakarta.validation.constraints.NotBlank;
 @Data
 public class JobCreateRequest {
     @NotBlank(message = "Job name is required")

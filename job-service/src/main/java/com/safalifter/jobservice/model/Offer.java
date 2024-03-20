@@ -1,9 +1,9 @@
 package com.safalifter.jobservice.model;
 
 import com.safalifter.jobservice.enums.OfferStatus;
+import jakarta.persistence.*;
 import lombok.*;
 
-import javax.persistence.*;
 
 @Entity(name = "offers")
 @Builder

@@ -2,9 +2,10 @@ package com.safalifter.jobservice.model;
 
 import com.safalifter.jobservice.enums.AdvertStatus;
 import com.safalifter.jobservice.enums.Advertiser;
+import jakarta.persistence.*;
 import lombok.*;
 
-import javax.persistence.*;
+import jakarta.persistence.Entity;
 import java.util.List;
 
 @Entity(name = "adverts")
